@@ -7,6 +7,7 @@ import OrderMenu from "./OrderMenu.jsx";
 import OrderHistory from "./OrderHistory.jsx";
 import AboutUs from "./AboutUs.jsx";
 import Contact from "./Contact.jsx";
+import Cart from "./Cart.jsx";
 
 import "./App.css";
 
@@ -14,14 +15,15 @@ function App() {
   return (
     <>
       <NavigationBar />
-      <main>
+      <main style={{ marginTop: "70px" }}>
         <Routes>
           <Route path="/LoginSignUp" element={<LoginSignUp />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/OrderMenu" element={<OrderMenu />} />
           <Route path="/OrderHistory" element={<OrderHistory />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Cart" element={<Cart />} />
         </Routes>
       </main>
     </>
