@@ -1,5 +1,5 @@
 // App.jsx
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import NavigationBar from "./NavigationBar.jsx";
 import Home from "./Homepage.jsx";
 import LoginSignUp from "./LoginSignUp.jsx";
@@ -17,6 +17,7 @@ function App() {
       <NavigationBar />
       <main style={{ marginTop: "70px" }}>
         <Routes>
+          <Route path="/" element={<Navigate to="/Home" />} />
           <Route path="/LoginSignUp" element={<LoginSignUp />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/OrderMenu" element={<OrderMenu />} />
