@@ -1,0 +1,40 @@
+/* Navbar styling */
+.navbar {
+  position: fixed;            /* ✅ Stays fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;                /* ✅ Full width across screen */
+  height: 70px;               /* ✅ Fixed height */
+  background-color: #ff8c42;  /* Orange background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;              /* ✅ Makes sure it stays above all content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Nice subtle shadow */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  transform: translateX(-20px); /* move 20px to the left visually */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #333;
+}
+
+
