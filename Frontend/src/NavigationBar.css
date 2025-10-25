@@ -37,4 +37,56 @@
   color: #333;
 }
 
+/* Dropdown container */
+.nav-links li.dropdown {
+  position: relative;
+  cursor: pointer;
+}
 
+/* Toggle link (username) */
+.nav-links .dropdown-toggle {
+  font-weight: 600;
+}
+
+/* Dropdown menu hidden by default */
+.nav-links .dropdown-menu {
+  list-style: none; /* removes the default bullets */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 150px;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  z-index: 100;
+  padding: 5px 0;
+}
+
+/* Show dropdown when hovering username */
+.nav-links li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown menu items */
+.nav-links .dropdown-menu li {
+  padding: 10px 15px;
+}
+
+.nav-links .dropdown-menu li button,
+.nav-links .dropdown-menu li a {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links .dropdown-menu li button:hover,
+.nav-links .dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}

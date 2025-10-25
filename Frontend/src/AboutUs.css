@@ -1,0 +1,59 @@
+/* Container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sections */
+.mission-section,
+.story-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.mission-text,
+.story-text {
+  flex: 1;
+}
+
+.mission-image,
+.story-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-image img,
+.story-image img {
+  width: 100%;
+  max-width: 500px; /* adjust the max-width as needed */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .mission-section,
+  .story-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mission-image img,
+  .story-image img {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}

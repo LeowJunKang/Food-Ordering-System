@@ -8,6 +8,7 @@ import OrderHistory from "./OrderHistory.jsx";
 import AboutUs from "./AboutUs.jsx";
 import Contact from "./Contact.jsx";
 import Cart from "./Cart.jsx";
+import AccountDetails from "./AccountDetails.jsx";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/Home" />} />
           <Route path="/LoginSignUp" element={<LoginSignUp />} />
+          <Route path="/AccountDetails" element={<AccountDetails />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/OrderMenu" element={<OrderMenu />} />
           <Route path="/OrderHistory" element={<OrderHistory />} />
